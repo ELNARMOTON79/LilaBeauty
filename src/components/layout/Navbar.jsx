@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="navbar__inner">
         <a href="#hero" className="navbar__logo" aria-label="Lila Beauty — Home">
           <img
-            src="/images/brand/logo.jpg"
+            src={import.meta.env.BASE_URL + "images/brand/logo.jpg"}
             alt="Lila Beauty"
             className="navbar__logo-img"
           />

@@ -11,9 +11,9 @@ const BOXES = [
       'Nuestra caja más pedida. Incluye lo esencial para un glow natural de día a noche.',
     items: ['Lip Gloss', 'Bronzing Drops', 'Halo Glow Blush'],
     images: [
-      '/images/lipsticks/elf-lip-gloss-rose.jpeg',
-      '/images/skincare/elf-bronzing-drops.jpeg',
-      '/images/skincare/elf-halo-glow-blush-wand.jpeg',
+      import.meta.env.BASE_URL + 'images/lipsticks/elf-lip-gloss-rose.jpeg',
+      import.meta.env.BASE_URL + 'images/skincare/elf-bronzing-drops.jpeg',
+      import.meta.env.BASE_URL + 'images/skincare/elf-halo-glow-blush-wand.jpeg',
     ],
   },
   {
@@ -24,9 +24,9 @@ const BOXES = [
       'Para las que no pueden vivir sin un buen labial. La combinación perfecta de color y cuidado.',
     items: ['Jelly Job Gloss', 'Smushy Balm', 'Fat Oil Lip Drip'],
     images: [
-      '/images/lipsticks/nyx-jelly-job-red.jpeg',
-      '/images/lipsticks/nyx-smushy-pink.jpeg',
-      '/images/lip-oils/nyx-fat-oil-lip-drip.jpeg',
+      import.meta.env.BASE_URL + 'images/lipsticks/nyx-jelly-job-red.jpeg',
+      import.meta.env.BASE_URL + 'images/lipsticks/nyx-smushy-pink.jpeg',
+      import.meta.env.BASE_URL + 'images/lip-oils/nyx-fat-oil-lip-drip.jpeg',
     ],
   },
   {
@@ -37,9 +37,9 @@ const BOXES = [
       'Lo que tu piel necesita. Limpieza, hidratación y glow en una sola caja.',
     items: ['Star Wash', 'Skin Tint SPF', 'SuperGlow Stick'],
     images: [
-      '/images/skincare/star-wash-cleanser.jpeg',
-      '/images/skincare/elf-halo-glow-skin-tint.jpeg',
-      '/images/skincare/pixi-superglow-stick.jpeg',
+      import.meta.env.BASE_URL + 'images/skincare/star-wash-cleanser.jpeg',
+      import.meta.env.BASE_URL + 'images/skincare/elf-halo-glow-skin-tint.jpeg',
+      import.meta.env.BASE_URL + 'images/skincare/pixi-superglow-stick.jpeg',
     ],
   },
 ];

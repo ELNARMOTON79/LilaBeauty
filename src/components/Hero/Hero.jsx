@@ -10,7 +10,7 @@ export default function Hero() {
 
       <div className="hero__content">
         <img
-          src="/images/brand/logo.jpg"
+          src={import.meta.env.BASE_URL + "images/brand/logo.jpg"}
           alt="Lila Beauty"
           className="hero__logo"
         />
