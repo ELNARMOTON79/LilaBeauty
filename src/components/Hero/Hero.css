@@ -1,0 +1,185 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(251, 207, 232, 0.5) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(233, 213, 255, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(254, 205, 211, 0.3) 0%, transparent 50%),
+    var(--color-bg-primary);
+}
+
+.hero__bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  animation: float 8s var(--ease-in-out) infinite;
+  pointer-events: none;
+}
+
+.hero__bg-orb--1 {
+  width: 400px;
+  height: 400px;
+  background: var(--color-rose-300);
+  top: 10%;
+  left: -5%;
+  animation-delay: 0s;
+}
+
+.hero__bg-orb--2 {
+  width: 300px;
+  height: 300px;
+  background: var(--color-lila-300);
+  bottom: 15%;
+  right: -5%;
+  animation-delay: -3s;
+}
+
+.hero__bg-orb--3 {
+  width: 200px;
+  height: 200px;
+  background: var(--color-rose-200);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: -5s;
+}
+
+.hero__content {
+  position: relative;
+  z-index: var(--z-base);
+  text-align: center;
+  padding: var(--space-8);
+  animation: fadeInUp var(--duration-slow) var(--ease-out) both;
+  animation-delay: 300ms;
+}
+
+.hero__logo {
+  width: 120px;
+  height: auto;
+  margin-inline: auto;
+  margin-bottom: var(--space-8);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  animation: scaleIn 600ms var(--ease-out) both;
+  animation-delay: 100ms;
+}
+
+.hero__slogan {
+  font-family: var(--font-display);
+  font-size: var(--text-6xl);
+  font-weight: 600;
+  font-style: italic;
+  color: var(--color-text-heading);
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-6);
+  letter-spacing: var(--tracking-tight);
+}
+
+.hero__slogan-accent {
+  color: var(--color-brand-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.hero__slogan-accent::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: var(--color-rose-200);
+  border-radius: var(--radius-full);
+  z-index: -1;
+}
+
+.hero__subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  max-width: 480px;
+  margin-inline: auto;
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-10);
+  animation: fadeInUp 600ms var(--ease-out) both;
+  animation-delay: 600ms;
+}
+
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-brand-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--text-base);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-full);
+  transition:
+    background-color var(--duration-fast),
+    transform var(--duration-fast),
+    box-shadow var(--duration-fast);
+  box-shadow: 0 4px 20px rgba(230, 52, 98, 0.3);
+  animation: fadeInUp 600ms var(--ease-out) both;
+  animation-delay: 800ms;
+}
+
+.hero__cta:hover {
+  background: var(--color-brand-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(230, 52, 98, 0.4);
+}
+
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: var(--space-8);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-secondary);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  animation: fadeIn 1s var(--ease-out) both;
+  animation-delay: 1.2s;
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--color-brand-primary), transparent);
+  animation: float 2s var(--ease-in-out) infinite;
+}
+
+@media (max-width: 768px) {
+  .hero__slogan {
+    font-size: var(--text-4xl);
+  }
+
+  .hero__logo {
+    width: 90px;
+  }
+
+  .hero__bg-orb--1 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero__bg-orb--2 {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__slogan {
+    font-size: var(--text-3xl);
+  }
+}

@@ -1,0 +1,197 @@
+.contact {
+  background: linear-gradient(
+    160deg,
+    var(--color-lila-100) 0%,
+    var(--color-rose-100) 40%,
+    var(--color-lila-50) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-rose-300),
+    transparent
+  );
+}
+
+.contact::after {
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(230, 52, 98, 0.06) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.contact__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  animation: float 10s var(--ease-in-out) infinite;
+}
+
+.contact__orb--1 {
+  width: 250px;
+  height: 250px;
+  background: rgba(233, 213, 255, 0.35);
+  top: -50px;
+  left: -80px;
+  animation-delay: -2s;
+}
+
+.contact__orb--2 {
+  width: 180px;
+  height: 180px;
+  background: rgba(254, 205, 211, 0.3);
+  bottom: -40px;
+  right: 10%;
+  animation-delay: -5s;
+}
+
+.contact__inner {
+  position: relative;
+  z-index: var(--z-base);
+  text-align: center;
+}
+
+.contact__label {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-brand-primary);
+  background: rgba(230, 52, 98, 0.1);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+}
+
+.contact__heading {
+  font-size: var(--text-4xl);
+  font-weight: 600;
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-4);
+}
+
+.contact__desc {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  max-width: 500px;
+  margin-inline: auto;
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-12);
+}
+
+.contact__buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.contact__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-full);
+  font-size: var(--text-base);
+  font-weight: 600;
+  transition:
+    transform var(--duration-fast),
+    box-shadow var(--duration-fast),
+    background-color var(--duration-fast);
+}
+
+.contact__btn:hover {
+  transform: translateY(-3px);
+}
+
+.contact__btn--whatsapp {
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.25);
+}
+
+.contact__btn--whatsapp:hover {
+  background: #1ebe57;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.35);
+}
+
+.contact__btn--instagram {
+  background: linear-gradient(
+    135deg,
+    #833ab4 0%,
+    #fd1d1d 50%,
+    #fcb045 100%
+  );
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(131, 58, 180, 0.25);
+}
+
+.contact__btn--instagram:hover {
+  box-shadow: 0 8px 30px rgba(131, 58, 180, 0.35);
+}
+
+.contact__btn-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* ── Footer ── */
+.footer {
+  background: linear-gradient(
+    160deg,
+    var(--color-rose-100) 0%,
+    var(--color-lila-100) 100%
+  );
+  border-top: 1px solid rgba(230, 52, 98, 0.08);
+  padding: var(--space-8) 0;
+  text-align: center;
+}
+
+.footer__text {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.footer__heart {
+  color: var(--color-brand-primary);
+}
+
+@media (max-width: 768px) {
+  .contact__heading {
+    font-size: var(--text-3xl);
+  }
+
+  .contact__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}

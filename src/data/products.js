@@ -1,0 +1,253 @@
+export const CATEGORIES = {
+  LIP_OILS: 'lip-oils',
+  LIPSTICKS: 'lipsticks',
+  SKINCARE: 'skincare',
+};
+
+export const CATEGORY_LABELS = {
+  [CATEGORIES.LIP_OILS]: 'Lip Oils',
+  [CATEGORIES.LIPSTICKS]: 'Labiales',
+  [CATEGORIES.SKINCARE]: 'Skin Care',
+};
+
+export const products = [
+  // ── Lip Oils ──
+  {
+    id: 'lo-1',
+    name: 'Fat Oil Lip Drip',
+    brand: 'NYX',
+    category: CATEGORIES.LIP_OILS,
+    image: '/images/lip-oils/nyx-fat-oil-lip-drip.jpeg',
+  },
+  {
+    id: 'lo-2',
+    name: 'Clear Lip Oil',
+    brand: 'e.l.f.',
+    category: CATEGORIES.LIP_OILS,
+    image: '/images/lip-oils/elf-clear-lip-oil.jpeg',
+  },
+  {
+    id: 'lo-3',
+    name: 'Plump Ambition Lip Oil',
+    brand: "L'Oréal",
+    category: CATEGORIES.LIP_OILS,
+    image: '/images/lip-oils/loreal-plump-ambition.jpeg',
+  },
+
+  // ── Labiales ──
+  {
+    id: 'ls-1',
+    name: 'Lip Gloss Rosé',
+    brand: 'e.l.f.',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/elf-lip-gloss-rose.jpeg',
+  },
+  {
+    id: 'ls-2',
+    name: 'Glitter Lip Gloss Brown',
+    brand: 'e.l.f.',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/elf-glitter-brown.jpeg',
+  },
+  {
+    id: 'ls-3',
+    name: 'Lip Gloss Coral',
+    brand: 'e.l.f.',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/elf-lip-gloss-coral.jpeg',
+  },
+  {
+    id: 'ls-4',
+    name: 'Lip Gloss Nude',
+    brand: 'e.l.f.',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/elf-lip-gloss-nude.jpeg',
+  },
+  {
+    id: 'ls-5',
+    name: 'Lip Oil Rosé Glitter',
+    brand: 'e.l.f.',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/elf-lip-oil-rose-glitter.jpeg',
+  },
+  {
+    id: 'ls-6',
+    name: 'Lip Gloss Brown',
+    brand: 'e.l.f.',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/elf-lip-gloss-brown.jpeg',
+  },
+  {
+    id: 'ls-7',
+    name: 'Lip Gloss Rosé Shimmer',
+    brand: 'e.l.f.',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/elf-lip-gloss-rose-shimmer.jpeg',
+  },
+  {
+    id: 'ls-8',
+    name: 'SuperStay Teddy Tint',
+    brand: 'Maybelline',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/maybelline-superstay-teddy-tint.jpeg',
+  },
+  {
+    id: 'ls-9',
+    name: 'Lipstick Rosé',
+    brand: 'Maybelline',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/maybelline-lipstick-rose.jpeg',
+  },
+  {
+    id: 'ls-10',
+    name: 'Lipstick Nude Coral',
+    brand: 'Maybelline',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/maybelline-lipstick-nude.jpeg',
+  },
+  {
+    id: 'ls-11',
+    name: 'SuperStay Vinyl Ink',
+    brand: 'Maybelline',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/maybelline-superstay-vinyl-ink.jpeg',
+  },
+  {
+    id: 'ls-12',
+    name: 'Jelly Job Shine Gloss Pink',
+    brand: 'NYX',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/nyx-jelly-job-pink.jpeg',
+  },
+  {
+    id: 'ls-13',
+    name: 'Jelly Job Shine Gloss Blue',
+    brand: 'NYX',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/nyx-jelly-job-blue.jpeg',
+  },
+  {
+    id: 'ls-14',
+    name: 'Smushy Matte Lip Balm Red',
+    brand: 'NYX',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/nyx-smushy-red.jpeg',
+  },
+  {
+    id: 'ls-15',
+    name: 'Smushy Matte Lip Balm Pink',
+    brand: 'NYX',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/nyx-smushy-pink.jpeg',
+  },
+  {
+    id: 'ls-16',
+    name: 'Smushy Matte Lip Balm Mauve',
+    brand: 'NYX',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/nyx-smushy-mauve.jpeg',
+  },
+  {
+    id: 'ls-17',
+    name: 'Jelly Job Shine Gloss Red',
+    brand: 'NYX',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/nyx-jelly-job-red.jpeg',
+  },
+  {
+    id: 'ls-18',
+    name: 'Jelly Job Rosé Glitter',
+    brand: 'NYX',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/nyx-jelly-job-rose-glitter.jpeg',
+  },
+  {
+    id: 'ls-19',
+    name: 'Jelly Job Terracotta',
+    brand: 'NYX',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/nyx-jelly-job-terracotta.jpeg',
+  },
+  {
+    id: 'ls-20',
+    name: 'Jelly Job Brown',
+    brand: 'NYX',
+    category: CATEGORIES.LIPSTICKS,
+    image: '/images/lipsticks/nyx-jelly-job-brown.jpeg',
+  },
+
+  // ── Skin Care ──
+  {
+    id: 'sc-1',
+    name: 'Star Wash Salicylic Acid Cleanser',
+    brand: 'STAR',
+    category: CATEGORIES.SKINCARE,
+    image: '/images/skincare/star-wash-cleanser.jpeg',
+  },
+  {
+    id: 'sc-2',
+    name: 'Halo Glow Beauty Wand Blush',
+    brand: 'e.l.f.',
+    category: CATEGORIES.SKINCARE,
+    image: '/images/skincare/elf-halo-glow-blush-wand.jpeg',
+  },
+  {
+    id: 'sc-3',
+    name: 'Bronzing Drops Pure Gold',
+    brand: 'e.l.f.',
+    category: CATEGORIES.SKINCARE,
+    image: '/images/skincare/elf-bronzing-drops.jpeg',
+  },
+  {
+    id: 'sc-4',
+    name: 'Halo Glow Skin Tint SPF 50',
+    brand: 'e.l.f.',
+    category: CATEGORIES.SKINCARE,
+    image: '/images/skincare/elf-halo-glow-skin-tint.jpeg',
+  },
+  {
+    id: 'sc-5',
+    name: 'Lash N Roll Mascara',
+    brand: 'e.l.f.',
+    category: CATEGORIES.SKINCARE,
+    image: '/images/skincare/elf-mascara-lila.jpeg',
+  },
+  {
+    id: 'sc-6',
+    name: 'On-the-Glow SuperGlow Stick',
+    brand: 'Pixi',
+    category: CATEGORIES.SKINCARE,
+    image: '/images/skincare/pixi-superglow-stick.jpeg',
+  },
+  {
+    id: 'sc-7',
+    name: 'Glow Reviver Melting Lip Balm',
+    brand: 'e.l.f.',
+    category: CATEGORIES.SKINCARE,
+    image: '/images/skincare/elf-glow-reviver-lip-balm.jpeg',
+  },
+  {
+    id: 'sc-8',
+    name: 'Squeeze Me Lip Balm Vanilla',
+    brand: 'e.l.f.',
+    category: CATEGORIES.SKINCARE,
+    image: '/images/skincare/elf-squeeze-me-yellow.jpeg',
+  },
+  {
+    id: 'sc-9',
+    name: 'Squeeze Me Lip Balm Grape',
+    brand: 'e.l.f.',
+    category: CATEGORIES.SKINCARE,
+    image: '/images/skincare/elf-squeeze-me-purple.jpeg',
+  },
+  {
+    id: 'sc-10',
+    name: 'Cloudtopia Cheek & Lip Mousse',
+    brand: 'Maybelline',
+    category: CATEGORIES.SKINCARE,
+    image: '/images/skincare/maybelline-cloudtopia.jpeg',
+  },
+];
+
+export const getProductsByCategory = (category) =>
+  products.filter((p) => p.category === category);
